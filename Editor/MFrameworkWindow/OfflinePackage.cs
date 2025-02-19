@@ -6,31 +6,35 @@ using Debug = UnityEngine.Debug;
 
 public class OfflinePackage
 {
-    public int Index { get; private set; }
-    public string PackageName { get; private set; }
-    public string PackagePath { get; private set; }
+    public int index { get; private set; }
+    public string packageName { get; private set; }
+    public string packagePath { get; private set; }
     public FileInfo PackageFileInfo { get; private set; }
 
-    public OfflinePackage(FileInfo fileInfo, int index) {
+    public OfflinePackage(FileInfo fileInfo, int index)
+    {
         PackageFileInfo = fileInfo;
-        PackageName = fileInfo.Name.Replace(".unitypackage", "");
-        PackagePath = fileInfo.FullName;
-        Index = index;
+        packageName = fileInfo.Name.Replace(".unitypackage", "");
+        packagePath = fileInfo.FullName;
+        this.index = index;
     }
 
-    public void CopyToDesktop() {
-        File.Copy(PackagePath,
-            Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + $"\\{PackageName}.unitypackage", true);
+    public void CopyToDesktop()
+    {
+        File.Copy(packagePath,
+            Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + $"\\{packageName}.unitypackage", true);
         Debug.Log("The file has been copied to the desktop");
     }
 
-    public void OpenFolder() {
-        Process.Start("explorer.exe", "/select," + PackagePath);
+    public void OpenFolder()
+    {
+        Process.Start("explorer.exe", "/select," + packagePath);
     }
 
     public bool ShowImportPanel { get; set; } = true;
 
-    public void Import() {
-        AssetDatabase.ImportPackage(PackagePath, ShowImportPanel);
+    public void Import()
+    {
+        AssetDatabase.ImportPackage(packagePath, ShowImportPanel);
     }
 }

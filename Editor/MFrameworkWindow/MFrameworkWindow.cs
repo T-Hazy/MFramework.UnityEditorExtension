@@ -307,13 +307,13 @@ namespace MFramework
         private void DrawPackageInfo(OfflinePackage package) {
             EditorGUILayout.BeginHorizontal();
             GUI.enabled = false;
-            EditorGUILayout.TextArea(package.Index.ToString(),
+            EditorGUILayout.TextArea(package.index.ToString(),
                 GUIStyleLibrary.AlignmentTextAreaStyle(TextAnchor.MiddleCenter, true), GUILayout.Width(51),
                 GUILayout.Height(50));
-            EditorGUILayout.TextArea(package.PackageName,
+            EditorGUILayout.TextArea(package.packageName,
                 GUIStyleLibrary.AlignmentTextAreaStyle(TextAnchor.MiddleCenter, true), GUILayout.Width(251),
                 GUILayout.Height(50));
-            EditorGUILayout.TextArea(package.PackagePath,
+            EditorGUILayout.TextArea(package.packagePath,
                 GUIStyleLibrary.AlignmentTextAreaStyle(TextAnchor.MiddleCenter, true), GUILayout.Width(301),
                 GUILayout.Height(50));
             GUI.enabled = true;
