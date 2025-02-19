@@ -1,0 +1,17 @@
+{
+  "name": "com.thazy.mframework.editorextension",
+  "version": "0.1.0",
+  "displayName": "MFramework.EditorExtension",
+  "description": "用于Unity开发的可重用编辑器拓展。",
+  "unity": "2023.3",
+  "author": {
+    "name": "当然是小喵咪呀",
+    "email": "1351820946@qq.com"
+  },
+  "documentation": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/T-Hazy/MFramework.git"
+  },
+  "dependencies": {}
+}
