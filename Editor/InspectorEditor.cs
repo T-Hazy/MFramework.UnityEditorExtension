@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using UnityEditor;
 using UnityEngine;
 
-namespace MFramework.EditorExtension
+namespace MFramework.EditorExtensions
 {
     public class InspectorEditor : UnityEditor.Editor
     {

@@ -1,7 +1,7 @@
 {
-  "name": "com.thazy.mframework.editorextension",
+  "name": "com.thazy.mframework.editorextensions",
   "version": "0.1.0",
-  "displayName": "MFramework.EditorExtension",
+  "displayName": "MFramework.EditorExtensions",
   "description": "用于Unity开发的可重用编辑器拓展。",
   "unity": "2023.3",
   "author": {

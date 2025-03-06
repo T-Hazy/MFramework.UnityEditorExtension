@@ -5,7 +5,7 @@ using UnityEngine;
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable RedundantNameQualifier
 
-namespace MFramework.EditorExtension
+namespace MFramework.EditorExtensions
 {
     internal class AnimationCollapseGroup
     {

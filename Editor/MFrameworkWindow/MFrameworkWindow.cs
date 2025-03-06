@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using MFramework.EditorWindowExtension;
-using MFramework.UtilityLibrary;
+using MFramework.EditorExtensions;
 using UnityEditor;
 using UnityEngine;
 

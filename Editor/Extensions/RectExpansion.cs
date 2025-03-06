@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MFramework.EditorExtension
+namespace MFramework.EditorExtensions
 {
     public static class RectExpansion
     {
